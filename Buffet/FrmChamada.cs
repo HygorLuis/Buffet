@@ -11,12 +11,14 @@ using MySql.Data.MySqlClient;
 
 namespace Buffet
 {
-    public partial class FrmChamadas : Form
+    public partial class FrmChamada : Form
     {
-        public FrmChamadas()
+        public FrmChamada()
         {
             InitializeComponent();
         }
+
+        public static Form FrmAnterior;
 
         private void FrmChamadas_Load(object sender, EventArgs e)
         {
@@ -42,6 +44,26 @@ namespace Buffet
                 }
                 connection.Close();
             }
+
+            //----------FILTRO----------
+            var filtro = new Dictionary<string, int>
+            {
+                {"Em Andamento", 0},
+                {"Finalizados", 1},
+                {"Todos", 2}
+            };
+
+            cboFiltro.DataSource = null;
+            cboFiltro.Items.Clear();
+            cboFiltro.ValueMember = "Value";
+            cboFiltro.DisplayMember = "Key";
+            cboFiltro.DataSource = new BindingSource(filtro, null);
+            cboFiltro.SelectedIndex = 0;
+            //--------------------------
+
+            if (FrmAnterior.Equals(new FrmConsulta()))
+                sairToolStripMenuItem.Visible = false;
+
         }
 
         private void EnabledField(bool enabled)
@@ -54,6 +76,13 @@ namespace Buffet
         }
 
         private void voltarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //var frmConsulta = new FrmConsulta();
+            FrmAnterior.Show();
+            Close();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmConsulta = new FrmConsulta();
             frmConsulta.Show();

@@ -28,141 +28,225 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadChamadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboCliente = new System.Windows.Forms.ComboBox();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnChamada = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tpEmAndamento = new System.Windows.Forms.TabPage();
-            this.tpFinalizado = new System.Windows.Forms.TabPage();
-            this.menuStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.lblPesquisar = new System.Windows.Forms.Label();
+            this.lvChamadas = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cboFiltro = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.lvParcela = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnParcela = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // cboCliente
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(580, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadUsuárioToolStripMenuItem,
-            this.cadChamadasToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
-            this.toolStripMenuItem1.Text = "Menu";
-            // 
-            // cadUsuárioToolStripMenuItem
-            // 
-            this.cadUsuárioToolStripMenuItem.Name = "cadUsuárioToolStripMenuItem";
-            this.cadUsuárioToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.cadUsuárioToolStripMenuItem.Text = "Cad. Usuário";
-            // 
-            // cadChamadasToolStripMenuItem
-            // 
-            this.cadChamadasToolStripMenuItem.Name = "cadChamadasToolStripMenuItem";
-            this.cadChamadasToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.cadChamadasToolStripMenuItem.Text = "Cad. Chamadas";
-            this.cadChamadasToolStripMenuItem.Click += new System.EventHandler(this.cadChamadasToolStripMenuItem_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(167, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(265, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cboCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboCliente.FormattingEnabled = true;
+            this.cboCliente.Location = new System.Drawing.Point(242, 16);
+            this.cboCliente.Name = "cboCliente";
+            this.cboCliente.Size = new System.Drawing.Size(265, 21);
+            this.cboCliente.TabIndex = 1;
             // 
             // btnCliente
             // 
-            this.btnCliente.Location = new System.Drawing.Point(12, 57);
+            this.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCliente.Location = new System.Drawing.Point(16, 42);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(275, 23);
+            this.btnCliente.Size = new System.Drawing.Size(207, 23);
             this.btnCliente.TabIndex = 2;
             this.btnCliente.Text = "Cliente";
             this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnChamada
             // 
-            this.btnChamada.Location = new System.Drawing.Point(293, 57);
+            this.btnChamada.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChamada.Location = new System.Drawing.Point(356, 44);
             this.btnChamada.Name = "btnChamada";
-            this.btnChamada.Size = new System.Drawing.Size(275, 23);
+            this.btnChamada.Size = new System.Drawing.Size(207, 23);
             this.btnChamada.TabIndex = 3;
             this.btnChamada.Text = "Chamada";
             this.btnChamada.UseVisualStyleBackColor = true;
+            this.btnChamada.Click += new System.EventHandler(this.btnChamada_Click);
             // 
-            // tabControl1
+            // lblPesquisar
             // 
-            this.tabControl1.Controls.Add(this.tpEmAndamento);
-            this.tabControl1.Controls.Add(this.tpFinalizado);
-            this.tabControl1.Location = new System.Drawing.Point(12, 86);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(556, 273);
-            this.tabControl1.TabIndex = 4;
+            this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesquisar.Location = new System.Drawing.Point(51, 14);
+            this.lblPesquisar.Name = "lblPesquisar";
+            this.lblPesquisar.Size = new System.Drawing.Size(185, 20);
+            this.lblPesquisar.TabIndex = 5;
+            this.lblPesquisar.Text = "Pesquisar por Cliente:";
             // 
-            // tpEmAndamento
+            // lvChamadas
             // 
-            this.tpEmAndamento.Location = new System.Drawing.Point(4, 22);
-            this.tpEmAndamento.Name = "tpEmAndamento";
-            this.tpEmAndamento.Padding = new System.Windows.Forms.Padding(3);
-            this.tpEmAndamento.Size = new System.Drawing.Size(548, 247);
-            this.tpEmAndamento.TabIndex = 0;
-            this.tpEmAndamento.Text = "Em Andamento";
-            this.tpEmAndamento.UseVisualStyleBackColor = true;
+            this.lvChamadas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lvChamadas.Location = new System.Drawing.Point(16, 78);
+            this.lvChamadas.Name = "lvChamadas";
+            this.lvChamadas.Size = new System.Drawing.Size(422, 165);
+            this.lvChamadas.TabIndex = 6;
+            this.lvChamadas.UseCompatibleStateImageBehavior = false;
+            this.lvChamadas.View = System.Windows.Forms.View.Details;
             // 
-            // tpFinalizado
+            // columnHeader1
             // 
-            this.tpFinalizado.Location = new System.Drawing.Point(4, 22);
-            this.tpFinalizado.Name = "tpFinalizado";
-            this.tpFinalizado.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFinalizado.Size = new System.Drawing.Size(548, 117);
-            this.tpFinalizado.TabIndex = 1;
-            this.tpFinalizado.Text = "Finalizados";
-            this.tpFinalizado.UseVisualStyleBackColor = true;
+            this.columnHeader1.Text = "N° Chamada";
+            this.columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tipo";
+            this.columnHeader2.Width = 100;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Data do Evento";
+            this.columnHeader3.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Horário para Ligar";
+            this.columnHeader4.Width = 100;
+            // 
+            // cboFiltro
+            // 
+            this.cboFiltro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboFiltro.FormattingEnabled = true;
+            this.cboFiltro.Location = new System.Drawing.Point(229, 44);
+            this.cboFiltro.Name = "cboFiltro";
+            this.cboFiltro.Size = new System.Drawing.Size(121, 21);
+            this.cboFiltro.TabIndex = 7;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(444, 78);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(119, 165);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cardápio";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 19);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(107, 140);
+            this.textBox1.TabIndex = 0;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(16, 255);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 10;
+            // 
+            // lvParcela
+            // 
+            this.lvParcela.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.lvParcela.Location = new System.Drawing.Point(255, 286);
+            this.lvParcela.Name = "lvParcela";
+            this.lvParcela.Size = new System.Drawing.Size(308, 131);
+            this.lvParcela.TabIndex = 11;
+            this.lvParcela.UseCompatibleStateImageBehavior = false;
+            this.lvParcela.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "N° Parcela";
+            this.columnHeader5.Width = 75;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Valor";
+            this.columnHeader6.Width = 75;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Vencimento";
+            this.columnHeader7.Width = 75;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Recebimento";
+            this.columnHeader8.Width = 75;
+            // 
+            // btnParcela
+            // 
+            this.btnParcela.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnParcela.Location = new System.Drawing.Point(255, 257);
+            this.btnParcela.Name = "btnParcela";
+            this.btnParcela.Size = new System.Drawing.Size(308, 23);
+            this.btnParcela.TabIndex = 12;
+            this.btnParcela.Text = "Parcela";
+            this.btnParcela.UseVisualStyleBackColor = true;
             // 
             // FrmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 371);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(580, 434);
+            this.Controls.Add(this.btnParcela);
+            this.Controls.Add(this.lvParcela);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.cboFiltro);
+            this.Controls.Add(this.lvChamadas);
+            this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.btnChamada);
             this.Controls.Add(this.btnCliente);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.cboCliente);
             this.Name = "FrmConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FrmConsulta_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cadUsuárioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadChamadasToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboCliente;
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Button btnChamada;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tpEmAndamento;
-        private System.Windows.Forms.TabPage tpFinalizado;
+        private System.Windows.Forms.Label lblPesquisar;
+        private System.Windows.Forms.ListView lvChamadas;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ComboBox cboFiltro;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.ListView lvParcela;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.Button btnParcela;
     }
 }

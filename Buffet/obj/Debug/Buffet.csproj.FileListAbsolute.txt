@@ -17,8 +17,6 @@ C:\Projetos\Buffet\Buffet\bin\Debug\Buffet.exe
 C:\Projetos\Buffet\Buffet\bin\Debug\Buffet.pdb
 C:\Projetos\Buffet\Buffet\bin\Debug\MySql.Data.dll
 C:\Projetos\Buffet\Buffet\bin\Debug\MySql.Data.xml
-C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.csprojResolveAssemblyReference.cache
-C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmChamadas.resources
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmConsulta.resources
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmLogin.resources
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.Properties.Resources.resources
@@ -26,3 +24,6 @@ C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.csproj.GenerateResource.Cache
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.csproj.CoreCompileInputs.cache
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.exe
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.pdb
+C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmCliente.resources
+C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.csprojResolveAssemblyReference.cache
+C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmChamada.resources
