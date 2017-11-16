@@ -175,7 +175,7 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "N° Parcela";
-            this.columnHeader5.Width = 75;
+            this.columnHeader5.Width = 65;
             // 
             // columnHeader6
             // 
