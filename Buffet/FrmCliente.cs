@@ -84,8 +84,8 @@ namespace Buffet
         {
             FrmChamada.FrmAnterior = new FrmCliente();
             var frmChamadas = new FrmChamada();
-            frmChamadas.Show();
-            Close();
+            frmChamadas.ShowDialog();
+            //Close();
         }
     }
 }

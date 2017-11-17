@@ -21,16 +21,16 @@ namespace Buffet
         private void btnCliente_Click(object sender, EventArgs e)
         {
             var frmCliente = new FrmCliente();
-            frmCliente.Show();
-            Close();
+            frmCliente.ShowDialog();
+            //Close();
         }
 
         private void btnChamada_Click(object sender, EventArgs e)
         {
             FrmChamada.FrmAnterior = new FrmConsulta();
             var frmChamadas = new FrmChamada();
-            frmChamadas.Show();
-            Close();
+            frmChamadas.ShowDialog();
+            //Close();
         }
 
         private void FrmConsulta_Load(object sender, EventArgs e)
@@ -50,9 +50,6 @@ namespace Buffet
             cboFiltro.DataSource = new BindingSource(filtro, null);
             cboFiltro.SelectedIndex = 0;
             //--------------------------
-
-            //monthCalendar1.AddAnnuallyBoldedDate(Convert.ToDateTime("14/11/2017"));
-            //monthCalendar1.UpdateBoldedDates();
         }
     }
 }

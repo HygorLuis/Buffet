@@ -50,14 +50,14 @@
             this.mtxtHorarioLigar = new System.Windows.Forms.MaskedTextBox();
             this.lblTipo = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.TextBox();
-            this.txtValor = new System.Windows.Forms.TextBox();
-            this.lblValor = new System.Windows.Forms.Label();
             this.lblNumChamada = new System.Windows.Forms.Label();
             this.txtNumChamada = new System.Windows.Forms.TextBox();
             this.lblInicio = new System.Windows.Forms.Label();
             this.mtxtInicio = new System.Windows.Forms.MaskedTextBox();
             this.lblDataEvento = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.lblValor = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblComplemento = new System.Windows.Forms.Label();
             this.txtComplemento = new System.Windows.Forms.TextBox();
@@ -72,14 +72,14 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtNumPessoas = new System.Windows.Forms.TextBox();
-            this.lblNumPessoas = new System.Windows.Forms.Label();
-            this.txtVlrPessoa = new System.Windows.Forms.TextBox();
-            this.lblPorPessoa = new System.Windows.Forms.Label();
-            this.txtParc = new System.Windows.Forms.TextBox();
-            this.lblParc = new System.Windows.Forms.Label();
             this.txtlrParc = new System.Windows.Forms.TextBox();
             this.lblVlrParc = new System.Windows.Forms.Label();
+            this.txtParc = new System.Windows.Forms.TextBox();
+            this.lblParc = new System.Windows.Forms.Label();
+            this.txtVlrPessoa = new System.Windows.Forms.TextBox();
+            this.lblPorPessoa = new System.Windows.Forms.Label();
+            this.txtNumPessoas = new System.Windows.Forms.TextBox();
+            this.lblNumPessoas = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -285,23 +285,6 @@
             this.txtTipo.TabIndex = 48;
             this.txtTipo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(12, 125);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(100, 20);
-            this.txtValor.TabIndex = 45;
-            this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblValor
-            // 
-            this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(9, 109);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(58, 13);
-            this.lblValor.TabIndex = 44;
-            this.lblValor.Text = "Valor Total";
-            // 
             // lblNumChamada
             // 
             this.lblNumChamada.AutoSize = true;
@@ -355,6 +338,23 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
             this.dateTimePicker1.TabIndex = 36;
             this.dateTimePicker1.Value = new System.DateTime(2017, 11, 15, 0, 0, 0, 0);
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(12, 125);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 45;
+            this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblValor
+            // 
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(9, 109);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(58, 13);
+            this.lblValor.TabIndex = 44;
+            this.lblValor.Text = "Valor Total";
             // 
             // groupBox2
             // 
@@ -493,39 +493,22 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Valores";
             // 
-            // txtNumPessoas
+            // txtlrParc
             // 
-            this.txtNumPessoas.Location = new System.Drawing.Point(12, 36);
-            this.txtNumPessoas.Name = "txtNumPessoas";
-            this.txtNumPessoas.Size = new System.Drawing.Size(100, 20);
-            this.txtNumPessoas.TabIndex = 45;
-            this.txtNumPessoas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtlrParc.Location = new System.Drawing.Point(12, 212);
+            this.txtlrParc.Name = "txtlrParc";
+            this.txtlrParc.Size = new System.Drawing.Size(100, 20);
+            this.txtlrParc.TabIndex = 53;
+            this.txtlrParc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lblNumPessoas
+            // lblVlrParc
             // 
-            this.lblNumPessoas.AutoSize = true;
-            this.lblNumPessoas.Location = new System.Drawing.Point(9, 20);
-            this.lblNumPessoas.Name = "lblNumPessoas";
-            this.lblNumPessoas.Size = new System.Drawing.Size(62, 13);
-            this.lblNumPessoas.TabIndex = 44;
-            this.lblNumPessoas.Text = "N° Pessoas";
-            // 
-            // txtVlrPessoa
-            // 
-            this.txtVlrPessoa.Location = new System.Drawing.Point(12, 81);
-            this.txtVlrPessoa.Name = "txtVlrPessoa";
-            this.txtVlrPessoa.Size = new System.Drawing.Size(100, 20);
-            this.txtVlrPessoa.TabIndex = 49;
-            this.txtVlrPessoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblPorPessoa
-            // 
-            this.lblPorPessoa.AutoSize = true;
-            this.lblPorPessoa.Location = new System.Drawing.Point(9, 65);
-            this.lblPorPessoa.Name = "lblPorPessoa";
-            this.lblPorPessoa.Size = new System.Drawing.Size(87, 13);
-            this.lblPorPessoa.TabIndex = 48;
-            this.lblPorPessoa.Text = "Valor por Pessoa";
+            this.lblVlrParc.AutoSize = true;
+            this.lblVlrParc.Location = new System.Drawing.Point(9, 196);
+            this.lblVlrParc.Name = "lblVlrParc";
+            this.lblVlrParc.Size = new System.Drawing.Size(81, 13);
+            this.lblVlrParc.TabIndex = 52;
+            this.lblVlrParc.Text = "Valor Parcela(s)";
             // 
             // txtParc
             // 
@@ -544,22 +527,39 @@
             this.lblParc.TabIndex = 50;
             this.lblParc.Text = "N° Parcela(s)";
             // 
-            // txtlrParc
+            // txtVlrPessoa
             // 
-            this.txtlrParc.Location = new System.Drawing.Point(12, 212);
-            this.txtlrParc.Name = "txtlrParc";
-            this.txtlrParc.Size = new System.Drawing.Size(100, 20);
-            this.txtlrParc.TabIndex = 53;
-            this.txtlrParc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtVlrPessoa.Location = new System.Drawing.Point(12, 81);
+            this.txtVlrPessoa.Name = "txtVlrPessoa";
+            this.txtVlrPessoa.Size = new System.Drawing.Size(100, 20);
+            this.txtVlrPessoa.TabIndex = 49;
+            this.txtVlrPessoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lblVlrParc
+            // lblPorPessoa
             // 
-            this.lblVlrParc.AutoSize = true;
-            this.lblVlrParc.Location = new System.Drawing.Point(9, 196);
-            this.lblVlrParc.Name = "lblVlrParc";
-            this.lblVlrParc.Size = new System.Drawing.Size(81, 13);
-            this.lblVlrParc.TabIndex = 52;
-            this.lblVlrParc.Text = "Valor Parcela(s)";
+            this.lblPorPessoa.AutoSize = true;
+            this.lblPorPessoa.Location = new System.Drawing.Point(9, 65);
+            this.lblPorPessoa.Name = "lblPorPessoa";
+            this.lblPorPessoa.Size = new System.Drawing.Size(87, 13);
+            this.lblPorPessoa.TabIndex = 48;
+            this.lblPorPessoa.Text = "Valor por Pessoa";
+            // 
+            // txtNumPessoas
+            // 
+            this.txtNumPessoas.Location = new System.Drawing.Point(12, 36);
+            this.txtNumPessoas.Name = "txtNumPessoas";
+            this.txtNumPessoas.Size = new System.Drawing.Size(100, 20);
+            this.txtNumPessoas.TabIndex = 45;
+            this.txtNumPessoas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblNumPessoas
+            // 
+            this.lblNumPessoas.AutoSize = true;
+            this.lblNumPessoas.Location = new System.Drawing.Point(9, 20);
+            this.lblNumPessoas.Name = "lblNumPessoas";
+            this.lblNumPessoas.Size = new System.Drawing.Size(62, 13);
+            this.lblNumPessoas.TabIndex = 44;
+            this.lblNumPessoas.Text = "N° Pessoas";
             // 
             // FrmChamada
             // 
@@ -581,6 +581,7 @@
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnIncluir);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmChamada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

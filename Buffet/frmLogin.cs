@@ -57,9 +57,12 @@ namespace Buffet
         {
             if (Login(txtLogin.Text, txtSenha.Text))
             {
-                var frmConsulta = new FrmConsulta();
-                frmConsulta.Show();
+                /*var frmConsulta = new FrmConsulta();
+                frmConsulta.Show();*/
                 
+                var frmAgenda = new FrmAgenda();
+                frmAgenda.Show();
+
                 Visible = false;
             }
             else

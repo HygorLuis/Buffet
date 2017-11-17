@@ -27,3 +27,4 @@ C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.pdb
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmCliente.resources
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.csprojResolveAssemblyReference.cache
 C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmChamada.resources
+C:\Projetos\Buffet\Buffet\obj\Debug\Buffet.FrmAgenda.resources
