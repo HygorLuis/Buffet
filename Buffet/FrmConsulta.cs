@@ -51,8 +51,8 @@ namespace Buffet
             cboFiltro.SelectedIndex = 0;
             //--------------------------
 
-            monthCalendar1.AddAnnuallyBoldedDate(Convert.ToDateTime("14/11/2017"));
-            monthCalendar1.UpdateBoldedDates();
+            //monthCalendar1.AddAnnuallyBoldedDate(Convert.ToDateTime("14/11/2017"));
+            //monthCalendar1.UpdateBoldedDates();
         }
     }
 }

@@ -61,9 +61,9 @@ namespace Buffet
             cboFiltro.SelectedIndex = 0;
             //--------------------------
 
-            if (FrmAnterior.Equals(new FrmConsulta()))
+            if (FrmAnterior.Text == "Consulta")
                 sairToolStripMenuItem.Visible = false;
-
+            
         }
 
         private void EnabledField(bool enabled)

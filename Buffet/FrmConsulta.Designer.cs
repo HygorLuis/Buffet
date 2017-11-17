@@ -40,13 +40,14 @@
             this.cboFiltro = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.lvParcela = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnParcela = new System.Windows.Forms.Button();
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // 
             this.cboCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboCliente.FormattingEnabled = true;
-            this.cboCliente.Location = new System.Drawing.Point(242, 16);
+            this.cboCliente.Location = new System.Drawing.Point(284, 16);
             this.cboCliente.Name = "cboCliente";
             this.cboCliente.Size = new System.Drawing.Size(265, 21);
             this.cboCliente.TabIndex = 1;
@@ -62,7 +63,7 @@
             // btnCliente
             // 
             this.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCliente.Location = new System.Drawing.Point(16, 42);
+            this.btnCliente.Location = new System.Drawing.Point(58, 42);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(207, 23);
             this.btnCliente.TabIndex = 2;
@@ -73,7 +74,7 @@
             // btnChamada
             // 
             this.btnChamada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChamada.Location = new System.Drawing.Point(356, 44);
+            this.btnChamada.Location = new System.Drawing.Point(398, 42);
             this.btnChamada.Name = "btnChamada";
             this.btnChamada.Size = new System.Drawing.Size(207, 23);
             this.btnChamada.TabIndex = 3;
@@ -85,7 +86,7 @@
             // 
             this.lblPesquisar.AutoSize = true;
             this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPesquisar.Location = new System.Drawing.Point(51, 14);
+            this.lblPesquisar.Location = new System.Drawing.Point(93, 14);
             this.lblPesquisar.Name = "lblPesquisar";
             this.lblPesquisar.Size = new System.Drawing.Size(185, 20);
             this.lblPesquisar.TabIndex = 5;
@@ -97,10 +98,12 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader9,
+            this.columnHeader10});
             this.lvChamadas.Location = new System.Drawing.Point(16, 78);
             this.lvChamadas.Name = "lvChamadas";
-            this.lvChamadas.Size = new System.Drawing.Size(422, 165);
+            this.lvChamadas.Size = new System.Drawing.Size(622, 165);
             this.lvChamadas.TabIndex = 6;
             this.lvChamadas.UseCompatibleStateImageBehavior = false;
             this.lvChamadas.View = System.Windows.Forms.View.Details;
@@ -127,9 +130,11 @@
             // 
             // cboFiltro
             // 
+            this.cboFiltro.BackColor = System.Drawing.SystemColors.Window;
             this.cboFiltro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFiltro.FormattingEnabled = true;
-            this.cboFiltro.Location = new System.Drawing.Point(229, 44);
+            this.cboFiltro.Location = new System.Drawing.Point(271, 43);
             this.cboFiltro.Name = "cboFiltro";
             this.cboFiltro.Size = new System.Drawing.Size(121, 21);
             this.cboFiltro.TabIndex = 7;
@@ -137,9 +142,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(444, 78);
+            this.groupBox1.Location = new System.Drawing.Point(16, 249);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(119, 165);
+            this.groupBox1.Size = new System.Drawing.Size(308, 185);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cardápio";
@@ -149,14 +154,8 @@
             this.textBox1.Location = new System.Drawing.Point(6, 19);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 140);
+            this.textBox1.Size = new System.Drawing.Size(296, 160);
             this.textBox1.TabIndex = 0;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(16, 255);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 10;
             // 
             // lvParcela
             // 
@@ -165,9 +164,9 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8});
-            this.lvParcela.Location = new System.Drawing.Point(255, 286);
+            this.lvParcela.Location = new System.Drawing.Point(330, 278);
             this.lvParcela.Name = "lvParcela";
-            this.lvParcela.Size = new System.Drawing.Size(308, 131);
+            this.lvParcela.Size = new System.Drawing.Size(308, 156);
             this.lvParcela.TabIndex = 11;
             this.lvParcela.UseCompatibleStateImageBehavior = false;
             this.lvParcela.View = System.Windows.Forms.View.Details;
@@ -179,7 +178,7 @@
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Valor";
+            this.columnHeader6.Text = "Valor Parcela";
             this.columnHeader6.Width = 75;
             // 
             // columnHeader7
@@ -195,21 +194,30 @@
             // btnParcela
             // 
             this.btnParcela.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnParcela.Location = new System.Drawing.Point(255, 257);
+            this.btnParcela.Location = new System.Drawing.Point(330, 249);
             this.btnParcela.Name = "btnParcela";
             this.btnParcela.Size = new System.Drawing.Size(308, 23);
             this.btnParcela.TabIndex = 12;
             this.btnParcela.Text = "Parcela";
             this.btnParcela.UseVisualStyleBackColor = true;
             // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Nº Pessoas";
+            this.columnHeader9.Width = 100;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Valor Total";
+            this.columnHeader10.Width = 100;
+            // 
             // FrmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 434);
+            this.ClientSize = new System.Drawing.Size(657, 444);
             this.Controls.Add(this.btnParcela);
             this.Controls.Add(this.lvParcela);
-            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cboFiltro);
             this.Controls.Add(this.lvChamadas);
@@ -241,12 +249,13 @@
         private System.Windows.Forms.ComboBox cboFiltro;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.ListView lvParcela;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.Button btnParcela;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
     }
 }

@@ -35,6 +35,7 @@
             this.btnIncluir = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.voltarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblCliente = new System.Windows.Forms.Label();
             this.cboCliente = new System.Windows.Forms.ComboBox();
             this.lvChamadas = new System.Windows.Forms.ListView();
@@ -49,12 +50,8 @@
             this.mtxtHorarioLigar = new System.Windows.Forms.MaskedTextBox();
             this.lblTipo = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblPorPessoa = new System.Windows.Forms.Label();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.lblValor = new System.Windows.Forms.Label();
-            this.txtNumPessoas = new System.Windows.Forms.TextBox();
-            this.lblNumPessoas = new System.Windows.Forms.Label();
             this.lblNumChamada = new System.Windows.Forms.Label();
             this.txtNumChamada = new System.Windows.Forms.TextBox();
             this.lblInicio = new System.Windows.Forms.Label();
@@ -63,7 +60,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblComplemento = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtComplemento = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.lblCep = new System.Windows.Forms.Label();
@@ -74,16 +71,25 @@
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtNumPessoas = new System.Windows.Forms.TextBox();
+            this.lblNumPessoas = new System.Windows.Forms.Label();
+            this.txtVlrPessoa = new System.Windows.Forms.TextBox();
+            this.lblPorPessoa = new System.Windows.Forms.Label();
+            this.txtParc = new System.Windows.Forms.TextBox();
+            this.lblParc = new System.Windows.Forms.Label();
+            this.txtlrParc = new System.Windows.Forms.TextBox();
+            this.lblVlrParc = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(392, 192);
+            this.btnExcluir.Location = new System.Drawing.Point(417, 192);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 10;
@@ -92,7 +98,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(311, 192);
+            this.btnCancelar.Location = new System.Drawing.Point(336, 192);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 9;
@@ -101,7 +107,7 @@
             // 
             // btnGravar
             // 
-            this.btnGravar.Location = new System.Drawing.Point(230, 192);
+            this.btnGravar.Location = new System.Drawing.Point(255, 192);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(75, 23);
             this.btnGravar.TabIndex = 8;
@@ -110,7 +116,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(149, 192);
+            this.btnAlterar.Location = new System.Drawing.Point(174, 192);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 23);
             this.btnAlterar.TabIndex = 7;
@@ -119,7 +125,7 @@
             // 
             // btnIncluir
             // 
-            this.btnIncluir.Location = new System.Drawing.Point(68, 192);
+            this.btnIncluir.Location = new System.Drawing.Point(93, 192);
             this.btnIncluir.Name = "btnIncluir";
             this.btnIncluir.Size = new System.Drawing.Size(75, 23);
             this.btnIncluir.TabIndex = 6;
@@ -133,7 +139,7 @@
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(566, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(595, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -144,11 +150,18 @@
             this.voltarToolStripMenuItem.Text = "Voltar";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.voltarToolStripMenuItem_Click);
             // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
             this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(9, 26);
+            this.lblCliente.Location = new System.Drawing.Point(26, 26);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(70, 20);
             this.lblCliente.TabIndex = 49;
@@ -158,7 +171,7 @@
             // 
             this.cboCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboCliente.FormattingEnabled = true;
-            this.cboCliente.Location = new System.Drawing.Point(85, 27);
+            this.cboCliente.Location = new System.Drawing.Point(102, 27);
             this.cboCliente.Name = "cboCliente";
             this.cboCliente.Size = new System.Drawing.Size(265, 21);
             this.cboCliente.TabIndex = 48;
@@ -170,7 +183,7 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.lvChamadas.Location = new System.Drawing.Point(58, 58);
+            this.lvChamadas.Location = new System.Drawing.Point(83, 58);
             this.lvChamadas.Name = "lvChamadas";
             this.lvChamadas.Size = new System.Drawing.Size(422, 123);
             this.lvChamadas.TabIndex = 50;
@@ -200,8 +213,9 @@
             // cboFiltro
             // 
             this.cboFiltro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFiltro.FormattingEnabled = true;
-            this.cboFiltro.Location = new System.Drawing.Point(423, 26);
+            this.cboFiltro.Location = new System.Drawing.Point(440, 26);
             this.cboFiltro.Name = "cboFiltro";
             this.cboFiltro.Size = new System.Drawing.Size(121, 21);
             this.cboFiltro.TabIndex = 51;
@@ -210,7 +224,7 @@
             // 
             this.lblFiltro.AutoSize = true;
             this.lblFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFiltro.Location = new System.Drawing.Point(362, 26);
+            this.lblFiltro.Location = new System.Drawing.Point(379, 26);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(55, 20);
             this.lblFiltro.TabIndex = 52;
@@ -222,21 +236,15 @@
             this.groupBox1.Controls.Add(this.mtxtHorarioLigar);
             this.groupBox1.Controls.Add(this.lblTipo);
             this.groupBox1.Controls.Add(this.txtTipo);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.lblPorPessoa);
-            this.groupBox1.Controls.Add(this.txtValor);
-            this.groupBox1.Controls.Add(this.lblValor);
-            this.groupBox1.Controls.Add(this.txtNumPessoas);
-            this.groupBox1.Controls.Add(this.lblNumPessoas);
             this.groupBox1.Controls.Add(this.lblNumChamada);
             this.groupBox1.Controls.Add(this.txtNumChamada);
             this.groupBox1.Controls.Add(this.lblInicio);
             this.groupBox1.Controls.Add(this.mtxtInicio);
             this.groupBox1.Controls.Add(this.lblDataEvento);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Location = new System.Drawing.Point(8, 221);
+            this.groupBox1.Location = new System.Drawing.Point(21, 221);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(429, 126);
+            this.groupBox1.Size = new System.Drawing.Size(549, 71);
             this.groupBox1.TabIndex = 53;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações do Evento";
@@ -244,7 +252,7 @@
             // lblHoraLigar
             // 
             this.lblHoraLigar.AutoSize = true;
-            this.lblHoraLigar.Location = new System.Drawing.Point(319, 74);
+            this.lblHoraLigar.Location = new System.Drawing.Point(441, 23);
             this.lblHoraLigar.Name = "lblHoraLigar";
             this.lblHoraLigar.Size = new System.Drawing.Size(91, 13);
             this.lblHoraLigar.TabIndex = 51;
@@ -252,7 +260,7 @@
             // 
             // mtxtHorarioLigar
             // 
-            this.mtxtHorarioLigar.Location = new System.Drawing.Point(314, 90);
+            this.mtxtHorarioLigar.Location = new System.Drawing.Point(436, 39);
             this.mtxtHorarioLigar.Mask = "90:00";
             this.mtxtHorarioLigar.Name = "mtxtHorarioLigar";
             this.mtxtHorarioLigar.Size = new System.Drawing.Size(100, 20);
@@ -277,56 +285,22 @@
             this.txtTipo.TabIndex = 48;
             this.txtTipo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(131, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 20);
-            this.textBox1.TabIndex = 47;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblPorPessoa
-            // 
-            this.lblPorPessoa.AutoSize = true;
-            this.lblPorPessoa.Location = new System.Drawing.Point(125, 74);
-            this.lblPorPessoa.Name = "lblPorPessoa";
-            this.lblPorPessoa.Size = new System.Drawing.Size(87, 13);
-            this.lblPorPessoa.TabIndex = 46;
-            this.lblPorPessoa.Text = "Valor por Pessoa";
-            // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(221, 90);
+            this.txtValor.Location = new System.Drawing.Point(12, 125);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(84, 20);
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 45;
             this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(233, 74);
+            this.lblValor.Location = new System.Drawing.Point(9, 109);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(58, 13);
             this.lblValor.TabIndex = 44;
             this.lblValor.Text = "Valor Total";
-            // 
-            // txtNumPessoas
-            // 
-            this.txtNumPessoas.Location = new System.Drawing.Point(12, 90);
-            this.txtNumPessoas.Name = "txtNumPessoas";
-            this.txtNumPessoas.Size = new System.Drawing.Size(100, 20);
-            this.txtNumPessoas.TabIndex = 43;
-            this.txtNumPessoas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblNumPessoas
-            // 
-            this.lblNumPessoas.AutoSize = true;
-            this.lblNumPessoas.Location = new System.Drawing.Point(30, 74);
-            this.lblNumPessoas.Name = "lblNumPessoas";
-            this.lblNumPessoas.Size = new System.Drawing.Size(62, 13);
-            this.lblNumPessoas.TabIndex = 42;
-            this.lblNumPessoas.Text = "N° Pessoas";
             // 
             // lblNumChamada
             // 
@@ -385,7 +359,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblComplemento);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtComplemento);
             this.groupBox2.Controls.Add(this.lblBairro);
             this.groupBox2.Controls.Add(this.txtBairro);
             this.groupBox2.Controls.Add(this.lblCep);
@@ -394,7 +368,7 @@
             this.groupBox2.Controls.Add(this.txtNumero);
             this.groupBox2.Controls.Add(this.lblEndereco);
             this.groupBox2.Controls.Add(this.txtEndereco);
-            this.groupBox2.Location = new System.Drawing.Point(8, 371);
+            this.groupBox2.Location = new System.Drawing.Point(157, 309);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(429, 121);
             this.groupBox2.TabIndex = 54;
@@ -410,12 +384,12 @@
             this.lblComplemento.TabIndex = 39;
             this.lblComplemento.Text = "Complemento";
             // 
-            // textBox2
+            // txtComplemento
             // 
-            this.textBox2.Location = new System.Drawing.Point(24, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(378, 20);
-            this.textBox2.TabIndex = 38;
+            this.txtComplemento.Location = new System.Drawing.Point(24, 82);
+            this.txtComplemento.Name = "txtComplemento";
+            this.txtComplemento.Size = new System.Drawing.Size(378, 20);
+            this.txtComplemento.TabIndex = 38;
             // 
             // lblBairro
             // 
@@ -485,9 +459,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Location = new System.Drawing.Point(446, 221);
+            this.groupBox3.Location = new System.Drawing.Point(157, 441);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(108, 271);
+            this.groupBox3.Size = new System.Drawing.Size(429, 110);
             this.groupBox3.TabIndex = 55;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Cardápio";
@@ -497,21 +471,102 @@
             this.textBox3.Location = new System.Drawing.Point(6, 19);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(96, 246);
+            this.textBox3.Size = new System.Drawing.Size(417, 85);
             this.textBox3.TabIndex = 0;
             // 
-            // sairToolStripMenuItem
+            // groupBox4
             // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            this.groupBox4.Controls.Add(this.txtlrParc);
+            this.groupBox4.Controls.Add(this.lblVlrParc);
+            this.groupBox4.Controls.Add(this.txtParc);
+            this.groupBox4.Controls.Add(this.lblParc);
+            this.groupBox4.Controls.Add(this.txtVlrPessoa);
+            this.groupBox4.Controls.Add(this.lblPorPessoa);
+            this.groupBox4.Controls.Add(this.txtNumPessoas);
+            this.groupBox4.Controls.Add(this.lblNumPessoas);
+            this.groupBox4.Controls.Add(this.txtValor);
+            this.groupBox4.Controls.Add(this.lblValor);
+            this.groupBox4.Location = new System.Drawing.Point(8, 309);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(126, 242);
+            this.groupBox4.TabIndex = 56;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Valores";
+            // 
+            // txtNumPessoas
+            // 
+            this.txtNumPessoas.Location = new System.Drawing.Point(12, 36);
+            this.txtNumPessoas.Name = "txtNumPessoas";
+            this.txtNumPessoas.Size = new System.Drawing.Size(100, 20);
+            this.txtNumPessoas.TabIndex = 45;
+            this.txtNumPessoas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblNumPessoas
+            // 
+            this.lblNumPessoas.AutoSize = true;
+            this.lblNumPessoas.Location = new System.Drawing.Point(9, 20);
+            this.lblNumPessoas.Name = "lblNumPessoas";
+            this.lblNumPessoas.Size = new System.Drawing.Size(62, 13);
+            this.lblNumPessoas.TabIndex = 44;
+            this.lblNumPessoas.Text = "N° Pessoas";
+            // 
+            // txtVlrPessoa
+            // 
+            this.txtVlrPessoa.Location = new System.Drawing.Point(12, 81);
+            this.txtVlrPessoa.Name = "txtVlrPessoa";
+            this.txtVlrPessoa.Size = new System.Drawing.Size(100, 20);
+            this.txtVlrPessoa.TabIndex = 49;
+            this.txtVlrPessoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblPorPessoa
+            // 
+            this.lblPorPessoa.AutoSize = true;
+            this.lblPorPessoa.Location = new System.Drawing.Point(9, 65);
+            this.lblPorPessoa.Name = "lblPorPessoa";
+            this.lblPorPessoa.Size = new System.Drawing.Size(87, 13);
+            this.lblPorPessoa.TabIndex = 48;
+            this.lblPorPessoa.Text = "Valor por Pessoa";
+            // 
+            // txtParc
+            // 
+            this.txtParc.Location = new System.Drawing.Point(12, 169);
+            this.txtParc.Name = "txtParc";
+            this.txtParc.Size = new System.Drawing.Size(100, 20);
+            this.txtParc.TabIndex = 51;
+            this.txtParc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblParc
+            // 
+            this.lblParc.AutoSize = true;
+            this.lblParc.Location = new System.Drawing.Point(9, 153);
+            this.lblParc.Name = "lblParc";
+            this.lblParc.Size = new System.Drawing.Size(69, 13);
+            this.lblParc.TabIndex = 50;
+            this.lblParc.Text = "N° Parcela(s)";
+            // 
+            // txtlrParc
+            // 
+            this.txtlrParc.Location = new System.Drawing.Point(12, 212);
+            this.txtlrParc.Name = "txtlrParc";
+            this.txtlrParc.Size = new System.Drawing.Size(100, 20);
+            this.txtlrParc.TabIndex = 53;
+            this.txtlrParc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblVlrParc
+            // 
+            this.lblVlrParc.AutoSize = true;
+            this.lblVlrParc.Location = new System.Drawing.Point(9, 196);
+            this.lblVlrParc.Name = "lblVlrParc";
+            this.lblVlrParc.Size = new System.Drawing.Size(81, 13);
+            this.lblVlrParc.TabIndex = 52;
+            this.lblVlrParc.Text = "Valor Parcela(s)";
             // 
             // FrmChamada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 502);
+            this.ClientSize = new System.Drawing.Size(595, 560);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -529,7 +584,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmChamada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmChamadas";
+            this.Text = "Cadastro de Chamadas";
             this.Load += new System.EventHandler(this.FrmChamadas_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -539,6 +594,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -565,12 +622,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.TextBox txtTipo;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblPorPessoa;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label lblValor;
-        private System.Windows.Forms.TextBox txtNumPessoas;
-        private System.Windows.Forms.Label lblNumPessoas;
         private System.Windows.Forms.Label lblNumChamada;
         private System.Windows.Forms.TextBox txtNumChamada;
         private System.Windows.Forms.Label lblInicio;
@@ -587,11 +640,20 @@
         private System.Windows.Forms.Label lblCep;
         private System.Windows.Forms.MaskedTextBox mtxtCep;
         private System.Windows.Forms.Label lblComplemento;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblHoraLigar;
         private System.Windows.Forms.MaskedTextBox mtxtHorarioLigar;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox txtVlrPessoa;
+        private System.Windows.Forms.Label lblPorPessoa;
+        private System.Windows.Forms.TextBox txtNumPessoas;
+        private System.Windows.Forms.Label lblNumPessoas;
+        private System.Windows.Forms.TextBox txtParc;
+        private System.Windows.Forms.Label lblParc;
+        private System.Windows.Forms.TextBox txtlrParc;
+        private System.Windows.Forms.Label lblVlrParc;
     }
 }
