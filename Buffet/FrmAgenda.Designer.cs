@@ -54,11 +54,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.consulta = new System.Windows.Forms.PictureBox();
             this.usuario = new System.Windows.Forms.PictureBox();
+            this.fechar = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -249,9 +251,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Controls.Add(this.fechar);
             this.panel1.Controls.Add(this.consulta);
             this.panel1.Controls.Add(this.usuario);
-            this.panel1.Location = new System.Drawing.Point(157, 515);
+            this.panel1.Location = new System.Drawing.Point(183, 515);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(740, 100);
             this.panel1.TabIndex = 5;
@@ -283,6 +286,19 @@
             this.usuario.MouseLeave += new System.EventHandler(this.usuario_MouseLeave);
             this.usuario.MouseMove += new System.Windows.Forms.MouseEventHandler(this.usuario_MouseMove);
             // 
+            // fechar
+            // 
+            this.fechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fechar.Image = ((System.Drawing.Image)(resources.GetObject("fechar.Image")));
+            this.fechar.Location = new System.Drawing.Point(672, 12);
+            this.fechar.Name = "fechar";
+            this.fechar.Size = new System.Drawing.Size(55, 50);
+            this.fechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fechar.TabIndex = 2;
+            this.fechar.TabStop = false;
+            this.fechar.MouseLeave += new System.EventHandler(this.fechar_MouseLeave);
+            this.fechar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.fechar_MouseMove);
+            // 
             // FrmAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -292,6 +308,7 @@
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAgenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgenda";
@@ -303,6 +320,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.consulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fechar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,5 +352,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox usuario;
         private System.Windows.Forms.PictureBox consulta;
+        private System.Windows.Forms.PictureBox fechar;
     }
 }

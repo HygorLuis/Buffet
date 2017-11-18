@@ -226,7 +226,6 @@
             this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.cboCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "FrmConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta";
